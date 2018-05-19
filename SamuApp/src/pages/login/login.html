@@ -1,0 +1,45 @@
+<!--
+  Generated template for the LoginPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header >
+  <ion-navbar color="danger">
+        <ion-title>Login</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+ <div>
+   <img src="assets/imgs/samu.png" alt="">
+   <br>
+ </div>
+
+ <div>
+    <ion-item>
+      <br><br>
+     <ion-label color="laranja">CPF</ion-label>
+     <ion-input type = "text"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label color="laranja">Senha</ion-label>
+      <ion-input type = "password"></ion-input>
+    </ion-item><br>
+
+    <button ion-button color="danger" full (click)="logar()">Login</button>
+ </div>
+
+ <div>
+   <p text-center><br><br>Primeiro Acesso?</p>
+   <button ion-button full color="danger">Cadastre-se</button>
+   <button ion-button color="facebook" full>Login with Facebook</button>
+ </div>
+
+</ion-content>
+<ion-footer>
+  <ion-toolbar color="danger">
+  </ion-toolbar>
+</ion-footer>
