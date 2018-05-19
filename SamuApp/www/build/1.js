@@ -72,7 +72,7 @@ var LocalizacaoPage = /** @class */ (function () {
     };
     LocalizacaoPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-localizacao',template:/*ion-inline-start:"C:\Users\aline\Documents\Trabalhos Faculdade\Ionic Projects\SamuApp\src\pages\localizacao\localizacao.html"*/'<!--\n  Generated template for the LocalizacaoPage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header>\n\n  <ion-navbar>\n    <ion-title>Localizacao</ion-title>\n  </ion-navbar>\n\n</ion-header>\n\n\n<ion-content padding>\n\n</ion-content>\n'/*ion-inline-end:"C:\Users\aline\Documents\Trabalhos Faculdade\Ionic Projects\SamuApp\src\pages\localizacao\localizacao.html"*/,
+            selector: 'page-localizacao',template:/*ion-inline-start:"C:\Users\aline\Documents\Trabalhos Faculdade\IonicApp\SamuApp\src\pages\localizacao\localizacao.html"*/'<!--\n  Generated template for the LocalizacaoPage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header>\n\n  <ion-navbar>\n    <ion-title>Localizacao</ion-title>\n  </ion-navbar>\n\n</ion-header>\n\n\n<ion-content padding>\n\n</ion-content>\n'/*ion-inline-end:"C:\Users\aline\Documents\Trabalhos Faculdade\IonicApp\SamuApp\src\pages\localizacao\localizacao.html"*/,
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavParams */]])
     ], LocalizacaoPage);
