@@ -12,7 +12,47 @@
 
 </ion-header>
 
-
 <ion-content padding>
+    <div>
+        <img class="logo" src="assets/imgs/samu.png" alt="">
+    </div>
+    <div>
+      <ion-item>
+        <br><br>
+       <ion-label color="laranja">Nome</ion-label>
+       <ion-input type = "text"></ion-input>
+      </ion-item>
+      <ion-item>
+        <br><br>
+       <ion-label color="laranja">CPF</ion-label>
+       <ion-input type = "text"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label color="laranja" >Nascimento</ion-label>
+        <ion-datetime displayFormat="MM/DD/YYYY" [(ngModel)]="myDate"></ion-datetime>
+      </ion-item>
+      <ion-item>
+        <ion-label color="laranja">Sexo</ion-label>
+        <ion-select [(ngModel)]="gender">
+          <ion-option value="f">Feminino</ion-option>
+          <ion-option value="m">Masculino</ion-option>
+        </ion-select>
+      </ion-item>
+      <ion-item>
+          <ion-label color="laranja">Senha</ion-label>
+          <ion-input type = "text" ></ion-input>
+      </ion-item>
+    </div>
+    <br>
+    <br>
+    <button ion-button full color="danger">Salvar</button>
+
+
 
 </ion-content>
+
+<ion-footer>
+  <ion-toolbar color="danger">
+
+  </ion-toolbar>
+</ion-footer>

@@ -1,4 +1,4 @@
-webpackJsonp([6],{
+webpackJsonp([5],{
 
 /***/ 109:
 /***/ (function(module, exports) {
@@ -23,26 +23,22 @@ webpackEmptyAsyncContext.id = 109;
 var map = {
 	"../pages/cadastro/cadastro.module": [
 		270,
-		4
-	],
-	"../pages/dados1/dados1.module": [
-		271,
 		3
 	],
-	"../pages/dados2/dados2.module": [
-		272,
+	"../pages/dados/dados.module": [
+		271,
 		2
 	],
 	"../pages/localizacao/localizacao.module": [
-		273,
+		272,
 		1
 	],
 	"../pages/login/login.module": [
-		274,
-		5
+		273,
+		4
 	],
 	"../pages/mapa/mapa.module": [
-		275,
+		274,
 		0
 	]
 };
@@ -86,7 +82,7 @@ var HomePage = /** @class */ (function () {
     }
     HomePage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-home',template:/*ion-inline-start:"C:\Users\aline\Documents\Trabalhos Faculdade\IonicApp\SamuApp\src\pages\home\home.html"*/'<ion-header>\n  <ion-navbar>\n    <button ion-button menuToggle>\n      <ion-icon name="menu"></ion-icon>\n    </button>\n    <ion-title >Olá, Fulano</ion-title>\n  </ion-navbar>\n</ion-header>\n\n<ion-content padding>\n  <div>\n    <br>\n    <img src="assets/imgs/samu.png" alt="">\n    <br>\n  </div>\n\n  <button ion-button class="buttonimg"></button>\n\n\n\n\n</ion-content>\n'/*ion-inline-end:"C:\Users\aline\Documents\Trabalhos Faculdade\IonicApp\SamuApp\src\pages\home\home.html"*/
+            selector: 'page-home',template:/*ion-inline-start:"C:\Users\aline\Documents\Trabalhos Faculdade\IonicApp\SamuApp\src\pages\home\home.html"*/'<ion-header>\n  <ion-navbar>\n    <button ion-button menuToggle>\n      <ion-icon name="menu"></ion-icon>\n    </button>\n    <ion-title >Olá, Fulano</ion-title>\n  </ion-navbar>\n</ion-header>\n\n<ion-content padding class="vertical-align-content">\n    <div>\n        <img class="logo" src="assets/imgs/samu.png" alt="">\n    </div>\n    <br>\n    <br>\n    <br>\n    <br>\n    <button ion-button color="danger" class="roundbutton">CHAMAR</button>\n\n</ion-content>\n\n<ion-footer>\n    <ion-toolbar color="danger">\n\n    </ion-toolbar>\n  </ion-footer>\n'/*ion-inline-end:"C:\Users\aline\Documents\Trabalhos Faculdade\IonicApp\SamuApp\src\pages\home\home.html"*/
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavController */]])
     ], HomePage);
@@ -153,8 +149,7 @@ var AppModule = /** @class */ (function () {
                 __WEBPACK_IMPORTED_MODULE_2_ionic_angular__["c" /* IonicModule */].forRoot(__WEBPACK_IMPORTED_MODULE_3__app_component__["a" /* MyApp */], {}, {
                     links: [
                         { loadChildren: '../pages/cadastro/cadastro.module#CadastroPageModule', name: 'CadastroPage', segment: 'cadastro', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/dados1/dados1.module#Dados1PageModule', name: 'Dados1Page', segment: 'dados1', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/dados2/dados2.module#Dados2PageModule', name: 'Dados2Page', segment: 'dados2', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/dados/dados.module#dadosPageModule', name: 'dadosPage', segment: 'dados', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/localizacao/localizacao.module#LocalizacaoPageModule', name: 'LocalizacaoPage', segment: 'localizacao', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/login/login.module#LoginPageModule', name: 'LoginPage', segment: 'login', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/mapa/mapa.module#MapaPageModule', name: 'MapaPage', segment: 'mapa', priority: 'low', defaultHistory: [] }
@@ -286,7 +281,7 @@ var LoginPage = /** @class */ (function () {
     };
     LoginPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-login',template:/*ion-inline-start:"C:\Users\aline\Documents\Trabalhos Faculdade\IonicApp\SamuApp\src\pages\login\login.html"*/'<!--\n  Generated template for the LoginPage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header >\n  <ion-navbar color="danger">\n        <ion-title>Login</ion-title>\n  </ion-navbar>\n\n</ion-header>\n\n\n<ion-content padding>\n <div>\n   <img src="assets/imgs/samu.png" alt="">\n   <br>\n </div>\n\n <div>\n    <ion-item>\n      <br><br>\n     <ion-label color="laranja">CPF</ion-label>\n     <ion-input type = "text"></ion-input>\n    </ion-item>\n    <ion-item>\n      <ion-label color="laranja">Senha</ion-label>\n      <ion-input type = "password"></ion-input>\n    </ion-item><br>\n\n    <button ion-button color="danger" full (click)="logar()">Login</button>\n </div>\n\n <div>\n   <p text-center><br><br>Primeiro Acesso?</p>\n   <button ion-button full color="danger">Cadastre-se</button>\n   <button ion-button color="facebook" full>Login with Facebook</button>\n </div>\n\n</ion-content>\n<ion-footer>\n  <ion-toolbar color="danger">\n  </ion-toolbar>\n</ion-footer>\n'/*ion-inline-end:"C:\Users\aline\Documents\Trabalhos Faculdade\IonicApp\SamuApp\src\pages\login\login.html"*/,
+            selector: 'page-login',template:/*ion-inline-start:"C:\Users\aline\Documents\Trabalhos Faculdade\IonicApp\SamuApp\src\pages\login\login.html"*/'<!--\n  Generated template for the LoginPage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header >\n  <ion-navbar color="danger">\n        <ion-title>Login</ion-title>\n  </ion-navbar>\n\n</ion-header>\n\n\n<ion-content padding>\n <div>\n   <img class="logo" src="assets/imgs/samu.png" alt="">\n </div>\n\n <div>\n    <br><br>\n    <ion-item>\n      <ion-label color="laranja">CPF</ion-label>\n      <ion-input type = "text"></ion-input>\n    </ion-item>\n    <ion-item>\n      <ion-label color="laranja">Senha</ion-label>\n      <ion-input type = "password"></ion-input>\n    </ion-item><br>\n\n    <button ion-button color="danger" full (click)="logar()">Login</button>\n </div>\n\n <div>\n   <p text-center><br><br>Primeiro Acesso?</p>\n   <button ion-button full color="danger">Cadastre-se</button>\n   <button ion-button color="facebook" full>Logar com Facebook</button>\n </div>\n\n</ion-content>\n<ion-footer>\n  <ion-toolbar color="danger">\n  </ion-toolbar>\n</ion-footer>\n'/*ion-inline-end:"C:\Users\aline\Documents\Trabalhos Faculdade\IonicApp\SamuApp\src\pages\login\login.html"*/,
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavParams */]])
     ], LoginPage);

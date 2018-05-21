@@ -7,12 +7,54 @@
 <ion-header>
 
   <ion-navbar>
-    <ion-title>Localizacao</ion-title>
+    <ion-title>Localização</ion-title>
   </ion-navbar>
 
 </ion-header>
 
 
 <ion-content padding>
+    <div>
+        <img class="logo" src="assets/imgs/samu.png" alt="">
+    </div>
+    <Div>
+        <button ion-button full color="danger" icon-end>
+          Localização
+          <ion-icon name="pin"></ion-icon>
+        </button>
+        <ion-item>
+            <ion-label color="laranja" floating>Estado</ion-label>
+            <ion-select [(ngModel)]="uf">
+              </ion-select>
+        </ion-item>
+        <ion-item>
+            <ion-label color="laranja" floating>Cidade</ion-label>
+            <ion-select [(ngModel)]="city">
+              </ion-select>
+        </ion-item>
+        <ion-item>
+            <ion-label color="laranja" floating>Endereço</ion-label>
+            <ion-input type = "text"></ion-input>
+        </ion-item>
+        <ion-item>
+            <ion-label color="laranja" floating>Bairro</ion-label>
+            <ion-input type = "text"></ion-input>
+        </ion-item>
+        <ion-item>
+            <ion-label color="laranja" floating>Complemento</ion-label>
+            <ion-input type = "text"></ion-input>
+        </ion-item>
+
+
+
+
+    </Div>
+
 
 </ion-content>
+
+<ion-footer>
+  <ion-toolbar color="danger">
+      <button ion-button full color="danger">Concluir</button>
+  </ion-toolbar>
+</ion-footer>

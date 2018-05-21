@@ -1,4 +1,27 @@
 page-home {
+  .logo{
+    display: block;
+    margin-left: auto;
+    margin-right: auto
+  };
+  .roundbutton{
+    display:block;
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    border: 1px solid red;
+    align-content: center;
+    align-items: center;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
 
-  
+  .vertical-align-content > *
+  {
+
+    height: 100%;
+  display: block;
+  vertical-align: middle;
+  }
 }

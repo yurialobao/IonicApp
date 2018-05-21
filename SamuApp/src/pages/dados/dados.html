@@ -1,0 +1,91 @@
+<!--
+  Generated template for the DadosPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Dados da Vítima</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+    <div>
+        <img class="logo" src="assets/imgs/samu.png" alt="">
+    </div>
+    <div>
+        <ion-item>
+            <ion-label color="laranja" floating>Sexo</ion-label>
+            <ion-select [(ngModel)]="genderVitima">
+              <ion-option value="f">Feminino</ion-option>
+              <ion-option value="m">Masculino</ion-option>
+            </ion-select>
+        </ion-item>
+        <ion-item>
+            <ion-label color="laranja" floating>Faixa Etária</ion-label>
+              <ion-select [(ngModel)]="faixaEtaria">
+                <ion-option>0 - 1 anos</ion-option>
+                <ion-option>2 - 4 anos</ion-option>
+                <ion-option>5 - 9 anos</ion-option>
+                <ion-option>10 - 19 anos</ion-option>
+                <ion-option>20 - 59 anos</ion-option>
+                <ion-option>>60 anos</ion-option>
+              </ion-select>
+        </ion-item>
+
+        <ion-item>
+          <ion-label color="laranja" floating>Queixa Principal</ion-label>
+          <ion-select [(ngModel)]="queixa">
+                <ion-option>Acidente de trânsito - atropelamento</ion-option>
+                <ion-option>Acidente de trânsito - automóvel</ion-option>
+                <ion-option>Acidente de trânsito - motocicleta</ion-option>
+                <ion-option>Uso de drogas ilícitas</ion-option>
+                <ion-option>Agressão</ion-option>
+                <ion-option>Convulsão</ion-option>
+                <ion-option>Crise nervosa/Crise de ansiedade</ion-option>
+                <ion-option>Dispneia</ion-option>
+                <ion-option>Dor abdominal</ion-option>
+                <ion-option>Dor precordial</ion-option>
+                <ion-option>Embriaguez</ion-option>
+                <ion-option>Ferimento contuso</ion-option>
+                <ion-option>Hipoglicemia</ion-option>
+                <ion-option>Intoxicação exógena</ion-option>
+                <ion-option>Mal-estar</ion-option>
+                <ion-option>PCR</ion-option>
+                <ion-option>Queda (inespecífica)</ion-option>
+                <ion-option>Queda da própria altura</ion-option>
+                <ion-option>Síncope</ion-option>
+                <ion-option>Suspeita de AVC</ion-option>
+                <ion-option>Tentativa de suicídio</ion-option>
+                <ion-option>Trauma (inespecífico)</ion-option>
+          </ion-select>
+        </ion-item>
+        <ion-item>
+            <ion-label color="laranja" floating>Vítima Consciente?</ion-label>
+            <ion-select [(ngModel)]="consciente">
+              <ion-option value="s">Sim</ion-option>
+              <ion-option value="n">Não</ion-option>
+            </ion-select>
+        </ion-item>
+        <ion-item>
+            <ion-label color="laranja" floating>Sangramento no Local?</ion-label>
+            <ion-select [(ngModel)]="consciente">
+              <ion-option value="s">Sim</ion-option>
+              <ion-option value="n">Não</ion-option>
+            </ion-select>
+        </ion-item>
+
+    </div>
+
+
+</ion-content>
+
+<ion-footer>
+  <ion-toolbar color="danger">
+      <button ion-button full color="danger">continuar</button>
+  </ion-toolbar>
+</ion-footer>

@@ -1,6 +1,6 @@
 webpackJsonp([1],{
 
-/***/ 273:
+/***/ 272:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -8,7 +8,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "LocalizacaoPageModule", function() { return LocalizacaoPageModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(39);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__localizacao__ = __webpack_require__(279);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__localizacao__ = __webpack_require__(277);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -38,7 +38,7 @@ var LocalizacaoPageModule = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 279:
+/***/ 277:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -72,7 +72,7 @@ var LocalizacaoPage = /** @class */ (function () {
     };
     LocalizacaoPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-localizacao',template:/*ion-inline-start:"C:\Users\aline\Documents\Trabalhos Faculdade\IonicApp\SamuApp\src\pages\localizacao\localizacao.html"*/'<!--\n  Generated template for the LocalizacaoPage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header>\n\n  <ion-navbar>\n    <ion-title>Localizacao</ion-title>\n  </ion-navbar>\n\n</ion-header>\n\n\n<ion-content padding>\n\n</ion-content>\n'/*ion-inline-end:"C:\Users\aline\Documents\Trabalhos Faculdade\IonicApp\SamuApp\src\pages\localizacao\localizacao.html"*/,
+            selector: 'page-localizacao',template:/*ion-inline-start:"C:\Users\aline\Documents\Trabalhos Faculdade\IonicApp\SamuApp\src\pages\localizacao\localizacao.html"*/'<!--\n  Generated template for the LocalizacaoPage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header>\n\n  <ion-navbar>\n    <ion-title>Localização</ion-title>\n  </ion-navbar>\n\n</ion-header>\n\n\n<ion-content padding>\n    <div>\n        <img class="logo" src="assets/imgs/samu.png" alt="">\n    </div>\n    <Div>\n        <button ion-button full color="danger" icon-end>\n          Localização\n          <ion-icon name="pin"></ion-icon>\n        </button>\n        <ion-item>\n            <ion-label color="laranja" floating>Estado</ion-label>\n            <ion-select [(ngModel)]="uf">\n              </ion-select>\n        </ion-item>\n        <ion-item>\n            <ion-label color="laranja" floating>Cidade</ion-label>\n            <ion-select [(ngModel)]="city">\n              </ion-select>\n        </ion-item>\n        <ion-item>\n            <ion-label color="laranja" floating>Endereço</ion-label>\n            <ion-input type = "text"></ion-input>\n        </ion-item>\n        <ion-item>\n            <ion-label color="laranja" floating>Bairro</ion-label>\n            <ion-input type = "text"></ion-input>\n        </ion-item>\n        <ion-item>\n            <ion-label color="laranja" floating>Complemento</ion-label>\n            <ion-input type = "text"></ion-input>\n        </ion-item>\n\n\n\n\n    </Div>\n\n\n</ion-content>\n\n<ion-footer>\n  <ion-toolbar color="danger">\n      <button ion-button full color="danger">Concluir</button>\n  </ion-toolbar>\n</ion-footer>\n'/*ion-inline-end:"C:\Users\aline\Documents\Trabalhos Faculdade\IonicApp\SamuApp\src\pages\localizacao\localizacao.html"*/,
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavParams */]])
     ], LocalizacaoPage);
