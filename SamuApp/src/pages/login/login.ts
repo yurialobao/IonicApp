@@ -20,7 +20,7 @@ export class LoginPage {
   }
 
   logar(): void{
-    this.navCtrl.push('HomePage');
+    this.navCtrl.setRoot('HomePage');
   }
   cadastrar(): void{
     this.navCtrl.push('CadastroPage');

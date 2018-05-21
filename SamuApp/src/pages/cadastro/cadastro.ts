@@ -1,3 +1,4 @@
+import { LoginPage } from './../login/login';
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 
@@ -8,7 +9,9 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
  * Ionic pages and navigation.
  */
 
-@IonicPage()
+@IonicPage({
+  priority: 'off'
+})
 @Component({
   selector: 'page-cadastro',
   templateUrl: 'cadastro.html',
@@ -16,6 +19,10 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 export class CadastroPage {
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
+  }
+
+  cancelar(): void{
+    this.navCtrl.setRoot(LoginPage);
   }
 
   ionViewDidLoad() {

@@ -7,7 +7,7 @@
 <ion-header>
 
   <ion-navbar>
-    <ion-title>Cadastro</ion-title>
+      <ion-title>Cadastro</ion-title>
   </ion-navbar>
 
 </ion-header>
@@ -40,12 +40,13 @@
       </ion-item>
       <ion-item>
           <ion-label color="laranja">Senha</ion-label>
-          <ion-input type = "text" ></ion-input>
+          <ion-input type = "text" placeholder="letras e numeros"></ion-input>
       </ion-item>
     </div>
     <br>
     <br>
     <button ion-button full color="danger">Salvar</button>
+    <button ion-button full color="danger" (click)="cancelar()">Cancelar</button>
 
 
 
