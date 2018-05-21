@@ -80,9 +80,15 @@ var HomePage = /** @class */ (function () {
     function HomePage(navCtrl) {
         this.navCtrl = navCtrl;
     }
+    HomePage.prototype.chamar = function () {
+        this.navCtrl.push('DadosPage');
+    };
+    HomePage.prototype.ionViewDidLoad = function () {
+        console.log('ionViewDidLoad HomePage');
+    };
     HomePage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-home',template:/*ion-inline-start:"C:\Users\aline\Documents\Trabalhos Faculdade\IonicApp\SamuApp\src\pages\home\home.html"*/'<ion-header>\n  <ion-navbar>\n    <button ion-button menuToggle>\n      <ion-icon name="menu"></ion-icon>\n    </button>\n    <ion-title >Olá, Fulano</ion-title>\n  </ion-navbar>\n</ion-header>\n\n<ion-content padding class="vertical-align-content">\n    <div>\n        <img class="logo" src="assets/imgs/samu.png" alt="">\n    </div>\n    <br>\n    <br>\n    <br>\n    <br>\n    <button ion-button color="danger" class="roundbutton">CHAMAR</button>\n\n</ion-content>\n\n<ion-footer>\n    <ion-toolbar color="danger">\n\n    </ion-toolbar>\n  </ion-footer>\n'/*ion-inline-end:"C:\Users\aline\Documents\Trabalhos Faculdade\IonicApp\SamuApp\src\pages\home\home.html"*/
+            selector: 'page-home',template:/*ion-inline-start:"C:\Users\aline\Documents\Trabalhos Faculdade\IonicApp\SamuApp\src\pages\home\home.html"*/'<ion-header>\n  <ion-navbar>\n    <button ion-button menuToggle>\n      <ion-icon name="menu"></ion-icon>\n    </button>\n    <ion-title >Olá, Fulano</ion-title>\n  </ion-navbar>\n</ion-header>\n\n<ion-content padding class="vertical-align-content">\n    <div>\n        <img class="logo" src="assets/imgs/samu.png" alt="">\n    </div>\n    <br>\n    <br>\n    <br>\n    <br>\n    <button ion-button color="danger" class="roundbutton" (click)="chamar()">CHAMAR</button>\n\n</ion-content>\n\n<ion-footer>\n    <ion-toolbar color="danger">\n\n    </ion-toolbar>\n  </ion-footer>\n'/*ion-inline-end:"C:\Users\aline\Documents\Trabalhos Faculdade\IonicApp\SamuApp\src\pages\home\home.html"*/
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavController */]])
     ], HomePage);
@@ -149,7 +155,7 @@ var AppModule = /** @class */ (function () {
                 __WEBPACK_IMPORTED_MODULE_2_ionic_angular__["c" /* IonicModule */].forRoot(__WEBPACK_IMPORTED_MODULE_3__app_component__["a" /* MyApp */], {}, {
                     links: [
                         { loadChildren: '../pages/cadastro/cadastro.module#CadastroPageModule', name: 'CadastroPage', segment: 'cadastro', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/dados/dados.module#dadosPageModule', name: 'dadosPage', segment: 'dados', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/dados/dados.module#DadosPageModule', name: 'DadosPage', segment: 'dados', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/localizacao/localizacao.module#LocalizacaoPageModule', name: 'LocalizacaoPage', segment: 'localizacao', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/login/login.module#LoginPageModule', name: 'LoginPage', segment: 'login', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/mapa/mapa.module#MapaPageModule', name: 'MapaPage', segment: 'mapa', priority: 'low', defaultHistory: [] }

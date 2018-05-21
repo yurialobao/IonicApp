@@ -18,6 +18,10 @@ export class LocalizacaoPage {
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
 
+  onMaps(): void{
+    this.navCtrl.push('MapaPage');
+  }
+
   ionViewDidLoad() {
     console.log('ionViewDidLoad LocalizacaoPage');
   }

@@ -1,5 +1,8 @@
+
+
 import { Component } from '@angular/core';
-import { NavController } from 'ionic-angular';
+import { NavController, IonicPage } from 'ionic-angular';
+
 
 @Component({
   selector: 'page-home',
@@ -10,5 +13,15 @@ export class HomePage {
   constructor(public navCtrl: NavController) {
 
   }
+
+  chamar(): void{
+    this.navCtrl.push('DadosPage');
+  }
+
+  ionViewDidLoad() {
+    console.log('ionViewDidLoad HomePage');
+  }
+
+
 
 }

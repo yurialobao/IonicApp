@@ -33390,7 +33390,6 @@ page-home .roundbutton {
 
 page-home .vertical-align-content > * {
   height: 100%;
-  display: block;
   vertical-align: middle;
 }
 
@@ -33408,7 +33407,6 @@ page-login .logo {
 
 page-login .vertical-align-content > * {
   height: 100%;
-  display: block;
   vertical-align: middle;
 }
 
