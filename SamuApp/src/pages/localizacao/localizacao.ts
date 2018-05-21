@@ -9,7 +9,8 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
  */
 
 @IonicPage({
-  defaultHistory: ["HomePage"]
+  defaultHistory: ["HomePage"],
+  priority: 'low'
 })
 @Component({
   selector: 'page-localizacao',

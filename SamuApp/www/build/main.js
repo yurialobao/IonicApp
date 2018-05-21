@@ -116,12 +116,12 @@ var AppModule = /** @class */ (function () {
                     preloadModules: true
                 }, {
                     links: [
-                        { loadChildren: '../pages/cadastro/cadastro.module#CadastroPageModule', name: 'CadastroPage', segment: 'cadastro', priority: 'off', defaultHistory: ['LoginPage'] },
+                        { loadChildren: '../pages/cadastro/cadastro.module#CadastroPageModule', name: 'CadastroPage', segment: 'cadastro', priority: 'off', defaultHistory: [] },
                         { loadChildren: '../pages/dados/dados.module#DadosPageModule', name: 'DadosPage', segment: 'dados', priority: 'low', defaultHistory: ['HomePage'] },
-                        { loadChildren: '../pages/home/home.module#HomePageModule', name: 'HomePage', segment: 'home', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/home/home.module#HomePageModule', name: 'HomePage', segment: 'home', priority: 'high', defaultHistory: [] },
                         { loadChildren: '../pages/localizacao/localizacao.module#LocalizacaoPageModule', name: 'LocalizacaoPage', segment: 'localizacao', priority: 'low', defaultHistory: ['HomePage'] },
                         { loadChildren: '../pages/login/login.module#LoginPageModule', name: 'LoginPage', segment: 'login', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/mapa/mapa.module#MapaPageModule', name: 'MapaPage', segment: 'mapa', priority: 'low', defaultHistory: [] }
+                        { loadChildren: '../pages/mapa/mapa.module#MapaPageModule', name: 'MapaPage', segment: 'mapa', priority: 'off', defaultHistory: ['LocalizacaoPage'] }
                     ]
                 }),
             ],
@@ -240,7 +240,7 @@ var LoginPage = /** @class */ (function () {
         this.navParams = navParams;
     }
     LoginPage.prototype.logar = function () {
-        this.navCtrl.push('HomePage');
+        this.navCtrl.setRoot('HomePage');
     };
     LoginPage.prototype.cadastrar = function () {
         this.navCtrl.push('CadastroPage');

@@ -8,7 +8,10 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
  * Ionic pages and navigation.
  */
 
-@IonicPage()
+@IonicPage({
+  defaultHistory: ['LocalizacaoPage'],
+  priority: "off"
+})
 @Component({
   selector: 'page-mapa',
   templateUrl: 'mapa.html',
