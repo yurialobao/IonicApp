@@ -67,6 +67,9 @@ var LocalizacaoPage = /** @class */ (function () {
         this.navCtrl = navCtrl;
         this.navParams = navParams;
     }
+    LocalizacaoPage.prototype.onMaps = function () {
+        this.navCtrl.push('MapaPage');
+    };
     LocalizacaoPage.prototype.ionViewDidLoad = function () {
         console.log('ionViewDidLoad LocalizacaoPage');
     };
