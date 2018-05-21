@@ -115,9 +115,9 @@ var AppModule = /** @class */ (function () {
                 __WEBPACK_IMPORTED_MODULE_2_ionic_angular__["c" /* IonicModule */].forRoot(__WEBPACK_IMPORTED_MODULE_3__app_component__["a" /* MyApp */], {}, {
                     links: [
                         { loadChildren: '../pages/cadastro/cadastro.module#CadastroPageModule', name: 'CadastroPage', segment: 'cadastro', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/dados/dados.module#DadosPageModule', name: 'DadosPage', segment: 'dados', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/dados/dados.module#DadosPageModule', name: 'DadosPage', segment: 'dados', priority: 'low', defaultHistory: ['HomePage'] },
                         { loadChildren: '../pages/home/home.module#HomePageModule', name: 'HomePage', segment: 'home', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/localizacao/localizacao.module#LocalizacaoPageModule', name: 'LocalizacaoPage', segment: 'localizacao', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/localizacao/localizacao.module#LocalizacaoPageModule', name: 'LocalizacaoPage', segment: 'localizacao', priority: 'low', defaultHistory: ['HomePage'] },
                         { loadChildren: '../pages/login/login.module#LoginPageModule', name: 'LoginPage', segment: 'login', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/mapa/mapa.module#MapaPageModule', name: 'MapaPage', segment: 'mapa', priority: 'low', defaultHistory: [] }
                     ]
@@ -240,12 +240,15 @@ var LoginPage = /** @class */ (function () {
     LoginPage.prototype.logar = function () {
         this.navCtrl.push('HomePage');
     };
+    LoginPage.prototype.cadastrar = function () {
+        this.navCtrl.push('CadastroPage');
+    };
     LoginPage.prototype.ionViewDidLoad = function () {
         console.log('ionViewDidLoad LoginPage');
     };
     LoginPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-login',template:/*ion-inline-start:"C:\Users\aline\Documents\Trabalhos Faculdade\IonicApp\SamuApp\src\pages\login\login.html"*/'<!--\n  Generated template for the LoginPage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header >\n  <ion-navbar color="danger">\n        <ion-title>Login</ion-title>\n  </ion-navbar>\n\n</ion-header>\n\n\n<ion-content padding>\n <div>\n   <img class="logo" src="assets/imgs/samu.png" alt="">\n </div>\n\n <div>\n    <br><br>\n    <ion-item>\n      <ion-label color="laranja">CPF</ion-label>\n      <ion-input type = "text"></ion-input>\n    </ion-item>\n    <ion-item>\n      <ion-label color="laranja">Senha</ion-label>\n      <ion-input type = "password"></ion-input>\n    </ion-item><br>\n\n    <button ion-button color="danger" full (click)="logar()">Login</button>\n </div>\n\n <div>\n   <p text-center><br><br>Primeiro Acesso?</p>\n   <button ion-button full color="danger">Cadastre-se</button>\n   <button ion-button color="facebook" full>Logar com Facebook</button>\n </div>\n\n</ion-content>\n<ion-footer>\n  <ion-toolbar color="danger">\n  </ion-toolbar>\n</ion-footer>\n'/*ion-inline-end:"C:\Users\aline\Documents\Trabalhos Faculdade\IonicApp\SamuApp\src\pages\login\login.html"*/,
+            selector: 'page-login',template:/*ion-inline-start:"C:\Users\aline\Documents\Trabalhos Faculdade\IonicApp\SamuApp\src\pages\login\login.html"*/'<!--\n  Generated template for the LoginPage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header >\n  <ion-navbar color="danger">\n        <ion-title>Login</ion-title>\n  </ion-navbar>\n\n</ion-header>\n\n\n<ion-content padding>\n <div>\n   <img class="logo" src="assets/imgs/samu.png" alt="">\n </div>\n\n <div>\n    <br><br>\n    <ion-item>\n      <ion-label color="laranja">CPF</ion-label>\n      <ion-input type = "text"></ion-input>\n    </ion-item>\n    <ion-item>\n      <ion-label color="laranja">Senha</ion-label>\n      <ion-input type = "password"></ion-input>\n    </ion-item><br>\n\n    <button ion-button color="danger" full (click)="logar()">Login</button>\n </div>\n\n <div>\n   <p text-center><br><br>Primeiro Acesso?</p>\n   <button ion-button full color="danger" (click)="cadastrar()">Cadastre-se</button>\n   <button ion-button color="facebook" full>Logar com Facebook</button>\n </div>\n\n</ion-content>\n<ion-footer>\n  <ion-toolbar color="danger">\n  </ion-toolbar>\n</ion-footer>\n'/*ion-inline-end:"C:\Users\aline\Documents\Trabalhos Faculdade\IonicApp\SamuApp\src\pages\login\login.html"*/,
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavParams */]])
     ], LoginPage);

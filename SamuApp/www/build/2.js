@@ -70,10 +70,9 @@ var HomePage = /** @class */ (function () {
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
             selector: 'page-home',template:/*ion-inline-start:"C:\Users\aline\Documents\Trabalhos Faculdade\IonicApp\SamuApp\src\pages\home\home.html"*/'<ion-header>\n  <ion-navbar>\n    <button ion-button menuToggle>\n      <ion-icon name="menu"></ion-icon>\n    </button>\n    <ion-title >Olá, Fulano</ion-title>\n  </ion-navbar>\n</ion-header>\n\n<ion-content padding class="vertical-align-content">\n    <div>\n        <img class="logo" src="assets/imgs/samu.png" alt="">\n    </div>\n    <br>\n    <br>\n    <br>\n    <br>\n    <button ion-button color="danger" class="roundbutton" (click)="chamar()">CHAMAR</button>\n\n</ion-content>\n\n<ion-footer>\n    <ion-toolbar color="danger">\n\n    </ion-toolbar>\n  </ion-footer>\n'/*ion-inline-end:"C:\Users\aline\Documents\Trabalhos Faculdade\IonicApp\SamuApp\src\pages\home\home.html"*/
         }),
-        __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavController */]) === "function" && _a || Object])
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavController */]])
     ], HomePage);
     return HomePage;
-    var _a;
 }());
 
 //# sourceMappingURL=home.js.map

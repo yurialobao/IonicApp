@@ -22,6 +22,9 @@ export class LoginPage {
   logar(): void{
     this.navCtrl.push('HomePage');
   }
+  cadastrar(): void{
+    this.navCtrl.push('CadastroPage');
+  }
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad LoginPage');
