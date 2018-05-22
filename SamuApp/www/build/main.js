@@ -38,11 +38,11 @@ var map = {
 		1
 	],
 	"../pages/login/login.module": [
-		273,
+		274,
 		5
 	],
 	"../pages/mapa/mapa.module": [
-		274,
+		273,
 		0
 	]
 };
@@ -120,8 +120,8 @@ var AppModule = /** @class */ (function () {
                         { loadChildren: '../pages/dados/dados.module#DadosPageModule', name: 'DadosPage', segment: 'dados', priority: 'low', defaultHistory: ['HomePage'] },
                         { loadChildren: '../pages/home/home.module#HomePageModule', name: 'HomePage', segment: 'home', priority: 'high', defaultHistory: [] },
                         { loadChildren: '../pages/localizacao/localizacao.module#LocalizacaoPageModule', name: 'LocalizacaoPage', segment: 'localizacao', priority: 'low', defaultHistory: ['HomePage'] },
-                        { loadChildren: '../pages/login/login.module#LoginPageModule', name: 'LoginPage', segment: 'login', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/mapa/mapa.module#MapaPageModule', name: 'MapaPage', segment: 'mapa', priority: 'off', defaultHistory: ['LocalizacaoPage'] }
+                        { loadChildren: '../pages/mapa/mapa.module#MapaPageModule', name: 'MapaPage', segment: 'mapa', priority: 'off', defaultHistory: ['LocalizacaoPage'] },
+                        { loadChildren: '../pages/login/login.module#LoginPageModule', name: 'LoginPage', segment: 'login', priority: 'low', defaultHistory: [] }
                     ]
                 }),
             ],
@@ -199,7 +199,7 @@ var MyApp = /** @class */ (function () {
         __metadata("design:type", __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* Nav */])
     ], MyApp.prototype, "nav", void 0);
     MyApp = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({template:/*ion-inline-start:"C:\Users\aline\Documents\Trabalhos Faculdade\IonicApp\SamuApp\src\app\app.html"*/'<ion-menu [content]="content">\n  <ion-header>\n    <ion-toolbar>\n      <ion-title>Menu</ion-title>\n    </ion-toolbar>\n  </ion-header>\n\n  <ion-content>\n    <ion-list>\n      <button menuClose ion-item *ngFor="let p of pages" (click)="openPage(p)">\n        {{p.title}}\n      </button>\n    </ion-list>\n  </ion-content>\n\n</ion-menu>\n\n<!-- Disable swipe-to-go-back because it\'s poor UX to combine STGB with side menus -->\n<ion-nav [root]="rootPage" #content swipeBackEnabled="false"></ion-nav>'/*ion-inline-end:"C:\Users\aline\Documents\Trabalhos Faculdade\IonicApp\SamuApp\src\app\app.html"*/
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({template:/*ion-inline-start:"C:\Users\Lumahay Uruguai\Desktop\Yuri\Ionic Projects\IonicApp\SamuApp\src\app\app.html"*/'<ion-menu [content]="content">\n\n  <ion-header>\n\n    <ion-toolbar>\n\n      <ion-title>Menu</ion-title>\n\n    </ion-toolbar>\n\n  </ion-header>\n\n\n\n  <ion-content>\n\n    <ion-list>\n\n      <button menuClose ion-item *ngFor="let p of pages" (click)="openPage(p)">\n\n        {{p.title}}\n\n      </button>\n\n    </ion-list>\n\n  </ion-content>\n\n\n\n</ion-menu>\n\n\n\n<!-- Disable swipe-to-go-back because it\'s poor UX to combine STGB with side menus -->\n\n<ion-nav [root]="rootPage" #content swipeBackEnabled="false"></ion-nav>'/*ion-inline-end:"C:\Users\Lumahay Uruguai\Desktop\Yuri\Ionic Projects\IonicApp\SamuApp\src\app\app.html"*/
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* Platform */], __WEBPACK_IMPORTED_MODULE_2__ionic_native_status_bar__["a" /* StatusBar */], __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__["a" /* SplashScreen */]])
     ], MyApp);
@@ -250,7 +250,7 @@ var LoginPage = /** @class */ (function () {
     };
     LoginPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-login',template:/*ion-inline-start:"C:\Users\aline\Documents\Trabalhos Faculdade\IonicApp\SamuApp\src\pages\login\login.html"*/'<!--\n  Generated template for the LoginPage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header >\n  <ion-navbar color="danger">\n        <ion-title>Login</ion-title>\n  </ion-navbar>\n\n</ion-header>\n\n\n<ion-content padding>\n <div>\n   <img class="logo" src="assets/imgs/samu.png" alt="">\n </div>\n\n <div>\n    <br><br>\n    <ion-item>\n      <ion-label color="laranja">CPF</ion-label>\n      <ion-input type = "text"></ion-input>\n    </ion-item>\n    <ion-item>\n      <ion-label color="laranja">Senha</ion-label>\n      <ion-input type = "password"></ion-input>\n    </ion-item><br>\n\n    <button ion-button color="danger" full (click)="logar()">Login</button>\n </div>\n\n <div>\n   <p text-center><br><br>Primeiro Acesso?</p>\n   <button ion-button full color="danger" (click)="cadastrar()">Cadastre-se</button>\n   <button ion-button color="facebook" full>Logar com Facebook</button>\n </div>\n\n</ion-content>\n<ion-footer>\n  <ion-toolbar color="danger">\n  </ion-toolbar>\n</ion-footer>\n'/*ion-inline-end:"C:\Users\aline\Documents\Trabalhos Faculdade\IonicApp\SamuApp\src\pages\login\login.html"*/,
+            selector: 'page-login',template:/*ion-inline-start:"C:\Users\Lumahay Uruguai\Desktop\Yuri\Ionic Projects\IonicApp\SamuApp\src\pages\login\login.html"*/'<!--\n\n  Generated template for the LoginPage page.\n\n\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n\n  Ionic pages and navigation.\n\n-->\n\n<ion-header >\n\n  <ion-navbar color="danger">\n\n        <ion-title>Login</ion-title>\n\n  </ion-navbar>\n\n\n\n</ion-header>\n\n\n\n\n\n<ion-content padding>\n\n <div>\n\n   <img class="logo" src="assets/imgs/samu.png" alt="">\n\n </div>\n\n\n\n <div>\n\n    <br><br>\n\n    <ion-item>\n\n      <ion-label color="laranja">CPF</ion-label>\n\n      <ion-input type = "text"></ion-input>\n\n    </ion-item>\n\n    <ion-item>\n\n      <ion-label color="laranja">Senha</ion-label>\n\n      <ion-input type = "password"></ion-input>\n\n    </ion-item><br>\n\n\n\n    <button ion-button color="danger" full (click)="logar()">Login</button>\n\n </div>\n\n\n\n <div>\n\n   <p text-center><br><br>Primeiro Acesso?</p>\n\n   <button ion-button full color="danger" (click)="cadastrar()">Cadastre-se</button>\n\n   <button ion-button color="facebook" full>Logar com Facebook</button>\n\n </div>\n\n\n\n</ion-content>\n\n<ion-footer>\n\n  <ion-toolbar color="danger">\n\n  </ion-toolbar>\n\n</ion-footer>\n\n'/*ion-inline-end:"C:\Users\Lumahay Uruguai\Desktop\Yuri\Ionic Projects\IonicApp\SamuApp\src\pages\login\login.html"*/,
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavParams */]])
     ], LoginPage);
